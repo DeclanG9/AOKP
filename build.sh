@@ -23,3 +23,5 @@ make bacon -j8  > reading
 retVal=$?
 timeEnd
 statusBuild
+
+#1
