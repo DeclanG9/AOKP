@@ -15,7 +15,7 @@ env:
 
 task:
   name: "Setting Up, Syncing, Building and Uploading"
-  only_if: $CIRRUS_REPO_OWNER == ''
+  only_if: $CIRRUS_REPO_OWNER == 'c3eru'
   timeout_in: 120m
   container:
     image: c3eru/gaspoll:22.04
