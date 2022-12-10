@@ -193,5 +193,5 @@ Total time elapsed: $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) seconds."
         tg_send_document --chat_id "$TG_CHAT_ID" --document "$LOGTRIM" --reply_to_message_id "$CI_MESSAGE_ID"
         exit $retVal
     fi
-    build_message "Build success ✅"
+    build_message "Build rampung ✅"
 }
