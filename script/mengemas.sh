@@ -36,7 +36,7 @@ cd $WORKDIR/rom/$nama_rom/out/target/product/$perangkat
 
 echo -e \
 "
-<b>Building selesai...</b>
+<b>Building wis selesai...</b>
 <b>==============================</b>
 <b>ROM :</b> <b>${nama_rom} | ${brach}</b>
 <b>Nama file :</b> <b><code>"${nama_file}"</code></b>
