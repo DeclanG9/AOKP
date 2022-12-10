@@ -14,11 +14,11 @@ env:
   CIRRUS_CLONE_DEPTH: "1"
   
 # TARGET
-  APPS: "Settings"
+  APPS: "SystemUI"
 
 task:
   name: "Setting Up, Syncing, Building and Uploading"
-  only_if: $CIRRUS_REPO_OWNER == 'c3eru'
+  only_if: $CIRRUS_REPO_OWNER == 'DeclanG9'
   timeout_in: 120m
   container:
     image: c3eru/gaspoll:22.04
