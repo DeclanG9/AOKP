@@ -28,7 +28,7 @@ cd $WORKDIR/rom/$nama_rom
 
 nama_file=$(basename out/target/product/$perangkat/*.zip)
 tautan=https://file.cloudmobx.workers.dev/$nama_rom/$perangkat/$nama_file
-maintainer=https://t.me/mobxprjkt
+maintainer=https://t.me/seklek
 
 rclone copy out/target/product/$(grep unch $CIRRUS_WORKING_DIR/build.sh -m 1 | cut -d ' ' -f 2 | cut -d _ -f 2 | cut -d - -f 1)/*.zip mobx:$(grep init $CIRRUS_WORKING_DIR/build.sh -m 1 | cut -d / -f 4)/$(grep unch $CIRRUS_WORKING_DIR/build.sh -m 1 | cut -d ' ' -f 2 | cut -d _ -f 2 | cut -d - -f 1) -P
 
