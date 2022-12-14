@@ -81,7 +81,7 @@ function upload() {
 enviroment
 sukses=$(grep '#### build completed successfully' $WORKDIR/rom/$nama_rom/build.log -m1 || true)
 if [[ $sukses == *'#### build completed successfully'* ]]; then
-    pesan Build selesai 100% sukses ✅
+    pesan Build selesai 100% yeh sukses ✅
     echo
     echo
     upload_rom
