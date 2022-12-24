@@ -11,4 +11,4 @@ curl -F document=@$APPS.apk "https://api.telegram.org/bot${TG_TOKEN}/sendDocumen
     -F "parse_mode=html" \
     -F caption="${APPS}.apk"
 
-rclone copy $APPS.apk mobx:Apps/Derp-13/$perangkat -P
+rclone copy $APPS.apk seklek:Apps/Derp-13/$perangkat -P
