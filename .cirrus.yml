@@ -14,7 +14,7 @@ env:
   CIRRUS_CLONE_DEPTH: "1"
   
 # TARGET
-  APPS: "SystemUI"
+  APPS: "Settings"
 
 task:
   name: "Setting Up, Syncing, Building and Uploading"
