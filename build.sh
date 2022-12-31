@@ -6,7 +6,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # build rom
 source $CIRRUS_WORKING_DIR/script/config
 timeStart
-
+ 
 source build/envsetup.sh
 export TZ=Asia/Jakarta
 export KBUILD_BUILD_USER=$KBUILD_BUILD_USER
