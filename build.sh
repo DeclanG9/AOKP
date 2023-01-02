@@ -13,7 +13,7 @@ export KBUILD_BUILD_USER=$KBUILD_BUILD_USER
 export KBUILD_BUILD_HOST=$KBUILD_BUILD_USER
 export BUILD_USERNAME=$KBUILD_BUILD_USER
 export BUILD_HOSTNAME=$KBUILD_BUILD_USER
-lunch derp_beryllium-userdebug
+lunch derp_beryllium-user
 mkfifo reading
 tee "${BUILDLOG}" < reading &
 build_message "Building Started"
