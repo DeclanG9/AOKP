@@ -37,7 +37,7 @@ task:
      - export KBUILD_BUILD_HOST=$KBUILD_BUILD_USER
      - export BUILD_USERNAME=$KBUILD_BUILD_USER
      - export BUILD_HOSTNAME=$KBUILD_BUILD_USER
-
+ 
 
   Sinkronisasi_script:
      - ./script/sinkronisasi.sh
