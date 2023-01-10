@@ -1,6 +1,6 @@
 #sync rom
 repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest.git -b tiramisu -g default,-mips,-darwin,-notdefault
-git clone --depth 1 https://github.com/DeclanG9/local_manifest -b derp .repo/local_manifests
+git clone --depth 1 https://github.com/DeclanG9/local_manifest -b evox .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # build rom
@@ -13,12 +13,12 @@ export KBUILD_BUILD_USER=$KBUILD_BUILD_USER
 export KBUILD_BUILD_HOST=$KBUILD_BUILD_USER
 export BUILD_USERNAME=$KBUILD_BUILD_USER
 export BUILD_HOSTNAME=$KBUILD_BUILD_USER
-lunch derp_beryllium-user
+lunch evolution_beryllium-userdebug
 mkfifo reading
 tee "${BUILDLOG}" < reading &
 build_message "Building Started"
 progress &
-make $APPS -j8  > reading
+mka $APPS -j8  > reading
 
 retVal=$?
 timeEnd
